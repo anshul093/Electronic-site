@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title>Smart devices</title>
+    </head>
+    <script>
+      function changeImage() {
+          var image = document.getElementById('myImage');
+          if (image.src.match("2.jpg")) {
+              image.src = "6.jpg";
+          }
+         
+           else{
+              image.src = "2.jpg";
+          }
+      }
+      </script>
+      
+    <style>
+      *{
+        margin:0; padding:0;
+      }
+      body{
+        background-image:url('home.jpg');
+        background-size:cover;
+        background-position:centre;
+        font-family: sans-serif;
+      }
+      .menu-bar{
+        background-color: black;
+        text-align: center;
+        
+      }
+      .menu-bar ul{
+        display:inline-flex;
+        list-style: none;
+        color: #fff;
+      }
+      .menu-bar li{
+       width: 100;
+       margin:10px;
+       padding:10px;
+      }
+      .menu-bar li a{
+        color:#fff;
+        text-decoration: none;
+      }
+      .active,menu-bar ul li:hover{
+        background-color: aquamarine;
+        border-radius:3px;
+      }
+      p{
+        font-size:50px;
+        font-style: italic;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 80;
+      }
+      .pic{
+        border:10px solid black;
+        display:flex;
+        height:350px;
+        margin-top: 20px;
+      }
+      .pic1 img{
+        border:10px solid black;
+        margin:20px;
+        width:80%;
+        height:500px;
+        margin-left: 150px;
+        
+      }
+      .pic2{
+        border:10px solid black;
+        display:flex;
+        height:350px;
+        margin-top: 20px;
+      }
+    </style>
+    <body>
+        
+        <div class="menu-bar">
+        <ul>
+          <li class="active"><a href="home page.html">Home</a></li>
+          <li><a href="login/logginn.html">Login</a></li>
+          <li><a href="category/category.html">Category</a></li>
+          <li><a href="demo/demo page.html">demo</a></li>
+          <li><a href="aboutus/abbout us.html">About Us</a> </li>
+          </ul>
+        </div>
+        <p>Welcome to Smart Devices</p>
+        <div class="pic"><img src="1.jpg">
+        <img src="2.jpg">
+        <img src="5.jpg"></div>
+        <div class="pic1">
+          <img id="myImage" onclick="changeImage()" src="6.jpg" >
+        </div>
+        <div class="pic2"><img src="4.jpg">
+          <img src="3.jpg" width="400px">
+          <img src="9.jpg"></div>
+      
+    </body>
+</html>

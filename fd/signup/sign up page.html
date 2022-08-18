@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>sign up page</title>
+<style>
+    *{
+        font-size: 22;
+        color:white;
+
+    }
+    body{
+        background-image: url('login.jpg');
+        background-size: 100%;
+    }
+    form{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    button{
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+    }
+</style>
+<body>    
+<div> 
+<form>
+<fieldset>
+<legend><ins><b>PERSONAL INFO</b></ins></legend><br>
+First Name:
+<input type="text" name="fname" placeholder="First Name"><br><br>
+Last Name:
+<input type="text" name="lname" placeholder="Last Name"><br><br>
+Gender:
+<input type="radio" name="sex" value="male">Male
+<input type="radio" name="sex" value="female">Female<br><br>
+Email Address:
+<input type="email" name="email name" placeholder="Email"><br><br>
+Contact Number:
+<input type="number" name="contact number" placeholder="Contact Number"><br><br>
+Date Of Birth:
+<input type="date" name="DOB"><br><br>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+format</button>
+
+<p id="demo"></p>
+Username:
+<input type="username" name="username" placeholder="username"><br><br>
+Password:(atlaeast 8 characters):
+<input type="password" name="password" placeholder="Password"><br><br>
+House Address:
+<input type="textfield" name="address" placeholder="Address"><br><br>
+State:
+<input list="states">
+<datalist id="states">
+    <option value="Haryana">
+        <option value="Punjab">
+            <option value="Chandigarh">
+                <option value="andhra pradesh">
+                </option>
+            </option>
+        </option>
+</datalist><br><br>
+Postal Code:
+<input type="number" name="pin code" placeholder="Postal Code"><br><br>
+<button type="Submit" name="Submit">Submit</button>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
